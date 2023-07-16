@@ -1,16 +1,12 @@
 package provaLavoroGruppo3;
 
-public class TemplatesMenu {
-
-    private String name;
-    private double price;
-    private String description;
-
-    public TemplatesMenu(String name, double price, String description) {
+public class PrimoPiatto {
+    public PrimoPiatto(String name, double price, String description) {
         this.name = name;
         this.price = price;
         this.description = description;
     }
+
     public String getName() {
         return name;
     }
@@ -35,10 +31,14 @@ public class TemplatesMenu {
         this.description = description;
     }
 
+    @Override
+    public String toString() {
+        return name.toUpperCase() +" "+ price +"\n"+ description ;
+    }
 
-
-
-
+    private String name;
+    private double price;
+    private String description;
 
 
 }
